@@ -9,6 +9,11 @@ Le immagini devono essere 5 e nella grafica devono essere presenti:
 Lo screenshot allegato è solo dimostrativo ma cercate di mettere le thumb in basso e non laterlamente
 */
 
+const slider = document.querySelector("slider");
+const thumbs = document.querySelector("thumbs");
+const next = document.querySelector("next");
+const prev = document.querySelector("prev");
+
 const immagini = [
     {
         titolo:"Svezia",
