@@ -63,5 +63,16 @@ for(let i = 1; i <= numImages; i++){
         <img  class="img-thumbs" src="https://cdn.sanity.io/images/24oxpx4s/prod/ed09eff0362396772ad50ec3bfb728d332eb1c30-3200x2125.jpg?w=1600&h=1063&fit=crop${i}.jpg" alt="">
     `;
 }
-slider.innerHTML = sliderHtml;
-thumbs.innerHTML = thumbsHtml;
+
+const listImages = document.getElementsByClassName('box');
+const listthumbs = document.getElementsByClassName('img-thumbs');
+
+listImages[counterImages].classList.add('active');
+listthumbs[counterImages].classList.add('active');
+
+// prev.addEventListener('click',function(){
+//     nextPrev(false);
+// })
+// next.addEventListener('click',function(){
+//     nextPrev(true);
+// })
