@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid black;
 }
 
 .main-wrapper{
     height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,14 +14,36 @@
 
 .container{
     position: relative;
-    width: 80%;
-    height: 80%;
-    background-color: brown;
+    width: 1400px;
+    height: 700px;
+    /* background-color: brown; */
 }
 
-.slider{
-    
-    width: 200px;
+.slider{   
+    width: 550px;
     height: 100%;
-    background-color: yellow;
+    object-fit: cover;
+    display: none;
+}
+
+.slider img.active{
+    display: block;
+}
+
+.thumbs{
+    width: 1400px;
+    height: 150px;
+    display: flex;
+}
+
+.img-thumbs{
+    width: 100%;
+    height: 150px;
+}
+
+.thumbs img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    opacity: .5;
 }
